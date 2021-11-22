@@ -17,11 +17,17 @@
 - Покрыть реализованный функционал Unit-тестами
 
 ## Запуск
-Сборка версии с Postgres:    
-docker build -t url_shortener . --target=postgres
+Сборка версии с Postgres:
+```bash
+$ docker build -t url_shortener . --target=postgres
+```
 
-Сборка версии с Redis (используется как in-memory хранилище):  
-docker build -t url_shortener . --target=redis
+Сборка версии с Redis (используется как in-memory хранилище):
+```bash
+$ docker build -t url_shortener . --target=redis
+```
 
 Запуск:
-docker run -p 8080:8080 url_shortener
+```bash
+$ docker run -p 8080:8080 url_shortener
+```
