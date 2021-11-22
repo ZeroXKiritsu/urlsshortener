@@ -15,3 +15,13 @@
 - Сервис должен быть распространён в виде Docker-образа
 - В качестве хранилища ожидается использовать in-memory решение И postgresql. Какое хранилище использовать указывается параметром при запуске сервиса.
 - Покрыть реализованный функционал Unit-тестами
+
+## Запуск
+Сборка версии с Postgres:    
+docker build -t url_shortener . --target=postgres
+
+Сборка версии с Redis (используется как in-memory хранилище):  
+docker build -t url_shortener . --target=redis
+
+Запуск:
+docker run -p 8080:8080 url_shortener
