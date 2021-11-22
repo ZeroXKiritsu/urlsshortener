@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS urls;
+CREATE TABLE urls (
+    id  SERIAL NOT NULL UNIQUE,
+    original  VARCHAR(255) NOT NULL,
+    short_url  VARCHAR(255) NOT NULL
+);
