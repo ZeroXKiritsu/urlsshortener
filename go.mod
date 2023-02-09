@@ -3,7 +3,7 @@ module github.com/ZeroXKiritsu/urlshortener
 go 1.17
 
 require (
-	github.com/gin-gonic/gin v1.7.5
+	github.com/gin-gonic/gin v1.7.7
 	github.com/go-playground/assert/v2 v2.0.1
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/golang/mock v1.6.0
